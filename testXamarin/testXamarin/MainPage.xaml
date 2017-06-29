@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:testXamarin"
+             x:Class="testXamarin.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Create account" TextColor="White" FontSize="20"></Label>
+            <Entry x:Name="txtUserName" Placeholder="User Name" WidthRequest="150" Text="14345"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Password" WidthRequest="150" Text="3clrn5" ></Entry>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                <Button Clicked="OnLogin"
+                    BackgroundColor="Gray" TextColor="White" Text="Login" WidthRequest="150" FontAttributes="Bold" FontSize="Large"  />
+            </StackLayout>
+            <StackLayout>
+                <Entry x:Name="txtToken" Placeholder="Token Response" WidthRequest="150" HeightRequest="150"></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
